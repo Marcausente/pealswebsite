@@ -7,11 +7,6 @@ const Footer = () => {
                         <img src="/logo.png" alt="Logo" style={{ height: '40px' }} />
                         <p>© 2026 Pearl's. Todos los derechos reservados.</p>
                     </div>
-                    <div className="social-links">
-                        <a href="#">Instagram</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">Facebook</a>
-                    </div>
                 </div>
             </div>
             <style>{`
