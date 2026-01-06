@@ -1,58 +1,58 @@
 const Menu = () => {
-    const dishes = [
-        { id: 1, name: "Filete Premium", img: "/img1.png", price: "$450" },
-        { id: 2, name: "Langosta Dorada", img: "/img2.png", price: "$520" },
-        { id: 3, name: "Sushi Imperial", img: "/img3.png", price: "$380" },
-        { id: 4, name: "Pasta Trufada", img: "/img4.png", price: "$320" },
-        { id: 5, name: "Cordero Asado", img: "/img5.png", price: "$410" },
-        { id: 6, name: "Postre de la Casa", img: "/img6.png", price: "$200" },
-    ];
+  const dishes = [
+    { id: 1, name: "Tartar de atún rojo", img: "/tartar.jpg", price: "$450" },
+    { id: 2, name: "Langosta al Horno", img: "/langosta-al-horno.webp", price: "$520" },
+    { id: 3, name: "Ostras Frescas", img: "/ostras.png", price: "$380" },
+    { id: 4, name: "Salmón a la plancha", img: "/salmon.webp", price: "$320" },
+    { id: 5, name: "Carpaccio de Gambas", img: "/Carpaccio.jpg", price: "$410" },
+    { id: 6, name: "Sorbete de Limón", img: "/sorbete.jpg", price: "$200" },
+  ];
 
-    const drinks = [
-        { id: 1, name: "Cocktail Blue Lagoon", price: "$120", desc: "Vodka, Blue Curaçao, Limonada" },
-        { id: 2, name: "Gold Rush Whiskey", price: "$150", desc: "Bourbon, Miel, Limón" },
-        { id: 3, name: "Vino Tinto Reserva", price: "$200", desc: "Cabernet Sauvignon 2018" },
-    ];
+  const drinks = [
+    { id: 1, name: "Cocktail de Atún", price: "$120", desc: "Vodka, Blue Curaçao, Limonada" },
+    { id: 2, name: "Gold Rush Whiskey", price: "$150", desc: "Bourbon, Miel, Limón" },
+    { id: 3, name: "Vino Tinto Reserva", price: "$200", desc: "Cabernet Sauvignon 2018" },
+  ];
 
-    return (
-        <section id="menu" className="section-padding menu-section">
-            <div className="container">
-                <div className="text-center mb-5">
-                    <h3 className="text-accent">Delicias Culinarias</h3>
-                    <h2>Nuestro Menú</h2>
-                </div>
+  return (
+    <section id="menu" className="section-padding menu-section">
+      <div className="container">
+        <div className="text-center mb-5">
+          <h3 className="text-accent">Delicias Culinarias</h3>
+          <h2>Nuestro Menú</h2>
+        </div>
 
-                <div className="menu-grid">
-                    {dishes.map((item) => (
-                        <div key={item.id} className="menu-card">
-                            <div className="card-image">
-                                <img src={item.img} alt={item.name} />
-                            </div>
-                            <div className="card-content">
-                                <h4>{item.name}</h4>
-                                <span className="price">{item.price}</span>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-                <div className="drinks-section mt-5">
-                    <h3 className="text-center mb-4 text-accent">Bebidas Exclusivas</h3>
-                    <div className="drinks-grid">
-                        {drinks.map((drink) => (
-                            <div key={drink.id} className="drink-card">
-                                <div className="drink-info">
-                                    <h4>{drink.name}</h4>
-                                    <p>{drink.desc}</p>
-                                </div>
-                                <span className="drink-price">{drink.price}</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+        <div className="menu-grid">
+          {dishes.map((item) => (
+            <div key={item.id} className="menu-card">
+              <div className="card-image">
+                <img src={item.img} alt={item.name} />
+              </div>
+              <div className="card-content">
+                <h4>{item.name}</h4>
+                <span className="price">{item.price}</span>
+              </div>
             </div>
+          ))}
+        </div>
 
-            <style>{`
+        <div className="drinks-section mt-5">
+          <h3 className="text-center mb-4 text-accent">Bebidas Exclusivas</h3>
+          <div className="drinks-grid">
+            {drinks.map((drink) => (
+              <div key={drink.id} className="drink-card">
+                <div className="drink-info">
+                  <h4>{drink.name}</h4>
+                  <p>{drink.desc}</p>
+                </div>
+                <span className="drink-price">{drink.price}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <style>{`
           .mb-5 { margin-bottom: 3rem; }
           .mb-4 { margin-bottom: 2rem; }
           .mt-5 { margin-top: 5rem; }
@@ -147,8 +147,8 @@ const Menu = () => {
           .drink-price { font-weight: 700; color: var(--color-accent); }
   
         `}</style>
-        </section>
-    );
+    </section>
+  );
 };
 
 export default Menu;

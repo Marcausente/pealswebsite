@@ -12,7 +12,10 @@ const Locations = () => {
             </p>
             <ul className="info-list">
               <li>
-                <strong>Dirección:</strong> 1234 Prosperity Street, Los Santos
+                <strong>Dirección:</strong> 7 Pier Drive, Los Santos
+              </li>
+              <li>
+                <strong>Teléfono:</strong> +1 234 567 890
               </li>
             </ul>
           </div>
