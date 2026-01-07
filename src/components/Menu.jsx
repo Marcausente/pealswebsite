@@ -9,9 +9,9 @@ const Menu = () => {
   ];
 
   const drinks = [
-    { id: 1, name: "Cocktail de Atún", price: "$120", desc: "Vodka, Blue Curaçao, Limonada" },
-    { id: 2, name: "Gold Rush Whiskey", price: "$150", desc: "Bourbon, Miel, Limón" },
-    { id: 3, name: "Vino Tinto Reserva", price: "$200", desc: "Cabernet Sauvignon 2018" },
+    { id: 1, name: "eCola", price: "$120", desc: "Bebida refrescante" },
+    { id: 2, name: "Agua", price: "$150", desc: "Agua mineral fresca" },
+    { id: 3, name: "Vino Tinto Reserva", price: "$200", desc: "Bourgeoix 2018" },
   ];
 
   return (
